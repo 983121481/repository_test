@@ -1,11 +1,8 @@
-package com.pojo;
+package com.tmin.pojo;
 
 import lombok.Data;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -14,6 +11,7 @@ import java.util.Date;
  * @date 2021-01-21 16:32
  */
 @Data
+@Entity
 @Table(name = "users")
 public class User implements Serializable {
     private static final long serialVersionUID = -2811134687378990361L;
